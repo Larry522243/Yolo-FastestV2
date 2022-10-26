@@ -10,13 +10,14 @@ learning_rate=0.001
 
 [model-configure]
 pre_weights=None
-classes=80
+classes=2
 width=352
 height=352
 anchor_num=3
-anchors=12.64,19.39, 37.88,51.48, 55.71,138.31, 126.91,78.23, 131.57,214.55, 279.92,258.87
+anchors=17.23,31.66, 28.05,50.91, 40.97,75.18, 59.56,105.37, 90.67,149.08, 158.84,231.49
+
 
 [data-configure]
-train=/media/qiuqiu/D/coco/train2017.txt
-val=/media/qiuqiu/D/coco/val2017.txt
-names=./data/coco.names
+train=./newImage/train.txt
+val=./newImage/val.txt
+names=./newImage/category.names
