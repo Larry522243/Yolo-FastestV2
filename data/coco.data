@@ -10,14 +10,14 @@ learning_rate=0.001
 
 [model-configure]
 pre_weights=None
-classes=2
+classes=52
 width=352
 height=352
 anchor_num=3
-anchors=17.23,31.66, 28.05,50.91, 40.97,75.18, 59.56,105.37, 90.67,149.08, 158.84,231.49
+anchors=13.55,23.57, 19.34,34.71, 20.15,20.05, 23.59,13.49, 29.51,29.03, 34.78,19.03
 
 
 [data-configure]
-train=./newImage/train.txt
-val=./newImage/val.txt
-names=./newImage/category.names
+train=./archive/train.txt
+val=./archive/val.txt
+names=./archive/category.names
