@@ -14,7 +14,7 @@ if __name__ == '__main__':
                         help='Specify training profile *.data')
     parser.add_argument('--weights', type=str, default='./weights/coco-150-epoch-0.871647ap-model.pth', 
                         help='The path of the .pth model to be transformed')
-    parser.add_argument('--img', type=str, default='./archive/test2.jpg', 
+    parser.add_argument('--img', type=str, default='./archive/test5.jpg', 
                         help='The path of test image')
 
     opt = parser.parse_args()
