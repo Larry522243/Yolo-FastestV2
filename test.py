@@ -10,11 +10,11 @@ import utils.utils
 if __name__ == '__main__':
     #指定训练配置文件
     parser = argparse.ArgumentParser()
-    parser.add_argument('--data', type=str, default='', 
+    parser.add_argument('--data', type=str, default='./data/coco.data', 
                         help='Specify training profile *.data')
-    parser.add_argument('--weights', type=str, default='', 
+    parser.add_argument('--weights', type=str, default='./weights/coco-150-epoch-0.871647ap-model.pth', 
                         help='The path of the .pth model to be transformed')
-    parser.add_argument('--img', type=str, default='', 
+    parser.add_argument('--img', type=str, default='./archive/test2.jpg', 
                         help='The path of test image')
 
     opt = parser.parse_args()
@@ -72,5 +72,3 @@ if __name__ == '__main__':
         cv2.putText(ori_img, category, (x1, y1 - 25), 0, 0.7, (0, 255, 0), 2)
 
     cv2.imwrite("test_result.png", ori_img)
-    
-
